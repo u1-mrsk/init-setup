@@ -1,5 +1,6 @@
 # Initial Setup on Ubuntu 18.04 LTS
 
+## Settings on gnome desktop and system key binding
     $ gsettings set org.gnome.desktop.interface gtk-key-theme Emacs
     $ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
     $ gsettings set org.gnome.desktop.interface clock-show-date true
@@ -7,6 +8,7 @@
 
     $ LANG=C xdg-user-dirs-gtk-update
 
+## Settings on dev-packages
     $ sudo apt update
     $ sudo apt upgrade -y
 
@@ -19,6 +21,7 @@
     $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     $ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+## Settings on Git and dot-configuration files
     $ sudo apt install -y git-all
 
     $ git clone https://github.com/u1-mrsk/dot-conf.git
@@ -28,8 +31,10 @@
     $ ln -sf dot-conf/bashrc ~/.bashrc
     $ ln -sf dot-conf/gitconfig ~/.gitconfig
 
+## Settings on Vim
     $ sudo apt install -y vim
 
+## Settings on Python
     $ sudo apt install -y python3
     $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
     $ source ~/.profile
@@ -39,6 +44,7 @@
     $ pyenv global 3.7.3
     $ pip install --upgrade pip
 
+## Settings on Rust
     $ sudo apt install -y curl
     $ sudo apt install -y mingw-w64
     $ curl https://sh.rustup.rs -sSf | sh
