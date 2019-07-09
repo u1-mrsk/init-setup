@@ -31,6 +31,10 @@
     $ ln -sf dot-conf/bashrc ~/.bashrc
     $ ln -sf dot-conf/gitconfig ~/.gitconfig
 
+    $ cd dot-conf/
+    $ git submodule init
+    $ git submodule update
+
 ## Settings on Vim
     $ sudo apt install -y vim
 
